@@ -14,8 +14,8 @@ function smash(array) {
   a = array.toString();
   a = a.replaceAll(",", " ");
   return a;
-}
+}       
 
-a = smash(["hello", "world", "this", "is", "amazing"]);
+    a = smash(["hello", "world", "this", "is", "amazing"]);
 
 console.log(a);
