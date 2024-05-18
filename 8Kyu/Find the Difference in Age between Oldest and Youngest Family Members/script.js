@@ -13,7 +13,7 @@ START;
 function ageDiff(arr) {
   a = Math.min(...arr);
   b = Math.max(...arr);
-  c = abs([a, b, a - b]);
+  c= [a, b, Math.abs(a - b)];
   return c;
 }
 

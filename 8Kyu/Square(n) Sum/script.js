@@ -7,16 +7,11 @@ START;
 3. Return the array into a new array
 
 ;DONE */
-
 function squareSum(numbers) {
-  function Square(number) {
-    return number ** 2;
-  }
-  squaredNumbers = numbers.map(Square);
-  sum = squaredNumbers.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue;
-  });
-  return sum;
+  let sum = 0;
+  for (let n of numbers){
+    sum += n ** 2
+  } return sum
 }
 
-
+console.log(squareSum([1, 2, 2]));
